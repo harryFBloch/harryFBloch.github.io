@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Warning!!! Career Change Ahead"
-date:       2018-10-09 01:18:27 +0000
+date:       2018-10-08 21:18:28 -0400
 permalink:  warning_career_change_ahead
 ---
 
