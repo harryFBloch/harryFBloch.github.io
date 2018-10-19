@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Satoshi Gem"
-date:       2018-10-19 17:21:19 +0000
+date:       2018-10-19 13:21:20 -0400
 permalink:  satoshi_gem
 ---
 
