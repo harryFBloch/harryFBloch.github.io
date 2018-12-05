@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "has-many trough tutorial"
+title:      "has-many trough Tutorial"
 date:       2018-12-04 19:07:55 -0500
 permalink:  has-many_trough_tutorial
 ---
