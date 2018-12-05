@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "has-many trough tutorial"
-date:       2018-12-05 00:07:54 +0000
+date:       2018-12-04 19:07:55 -0500
 permalink:  has-many_trough_tutorial
 ---
 
