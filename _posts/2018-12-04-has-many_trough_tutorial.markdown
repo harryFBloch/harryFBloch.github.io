@@ -15,16 +15,21 @@ For this tutorial I am going to show you to create a simple has_many through ass
 	Lets start off by creating our app with the rail new command and we will call our app has-through-tutorial
 	
 
-`In the Terminal enter  $ ralis new has-through-tutorial`
+In the Terminal enter 
+`$ rails new has-through-tutorial`
 
 
 	Next we will generate our models with the rails generator command. Make sure you cd into your project’s root directory and enter the follow in the terminal:
+	
+	Next we will generate our models with the rails generator command. Make sure you cd into your project’s root directory and enter the follow in the terminal:
 			
+
 ```
 $ rails g model paper
 $ rails g model paragraph
 $ rails g model sentence
 ```
+
 
 	This will generate our model class files and migration files to create our tables. Open up the Paper migration file /db/migration/001create_papers.rb the numbers in from of create_papers will we different for you. Then add this line inside the create table block.
 
