@@ -19,9 +19,7 @@ In the Terminal enter
 `$ rails new has-through-tutorial`
 
 
-	Next we will generate our models with the rails generator command. Make sure you cd into your project’s root directory and enter the follow in the terminal:
-	
-	Next we will generate our models with the rails generator command. Make sure you cd into your project’s root directory and enter the follow in the terminal:
+Next we will generate our models with the rails generator command. Make sure you cd into your project’s root directory and enter the follow in the terminal:
 			
 
 ```
@@ -31,18 +29,18 @@ $ rails g model sentence
 ```
 
 
-	This will generate our model class files and migration files to create our tables. Open up the Paper migration file /db/migration/001create_papers.rb the numbers in from of create_papers will we different for you. Then add this line inside the create table block.
+This will generate our model class files and migration files to create our tables. Open up the Paper migration file /db/migration/001create_papers.rb the numbers in from of create_papers will we different for you. Then add this line inside the create table block.
 
 
 `t.string :title`
 
-	Here we are adding the column title to our Papers table and model. Now in the same place on the create_sentance.rb migration file add this line. 
+Here we are adding the column title to our Papers table and model. Now in the same place on the create_sentance.rb migration file add this line. 
 	
 
 `t.integer :paper_id`
 
 
-	Here we are adding the foreign key for the paper our paragraph belongs to.Now on to the create_sentace.rb migration file also in the create table block add:
+Here we are adding the foreign key for the paper our paragraph belongs to.Now on to the create_sentace.rb migration file also in the create table block add:
 	
 ```
 t.integer :paragraph_id
@@ -55,27 +53,27 @@ t.string :text
 '$ rake db:migrate'
 
 
-	This will run the migration files we just created and edited adding the tables to our database. Next open up app/models/paper.rb and add the association: 
+This will run the migration files we just created and edited adding the tables to our database. Next open up app/models/paper.rb and add the association: 
 
 ```
 has_many :paragraphs
 has_many :sentences, through: :paragraphs
 ```
 
-	Here we are setting up the has_many and has_many through association using the ActiveRecord methods. Now open up app/models/paragraph.rb, and add the correct associations: 
+Here we are setting up the has_many and has_many through association using the ActiveRecord methods. Now open up app/models/paragraph.rb, and add the correct associations: 
 
 ```
 belongs_to :paper
 has_many :sentances
 ```
 
-	Just like before we are setting up another has many association however this time we are using a new method belongs_to telling ActiveRecord that each Paragraph has only one paper. Finally on to app/models/sentance.rb. 
+Just like before we are setting up another has many association however this time we are using a new method belongs_to telling ActiveRecord that each Paragraph has only one paper. Finally on to app/models/sentance.rb. 
 	
 ```
 belongs_to :paragraph
 ```
 
-	Now our associations are all set up add this to you seed file db/seeds.rb:
+Now our associations are all set up add this to you seed file db/seeds.rb:
 	
 ```
 paper = Paper.create(title: "Hi")
