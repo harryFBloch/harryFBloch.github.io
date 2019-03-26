@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "StoryTime JavaScript Project"
-date:       2019-02-04 15:43:29 +0000
+date:       2019-02-04 10:43:30 -0500
 permalink:  storytime_javascript_project
 ---
 
 
-For this months project at flatiron school I was tasked with going back over my last project Storytime that is a full rails app, and add an api to the project along with ajax calls instead of reloading the page every time a button is pressed. Storytime allows users to sign up using their google account or creating a new account with email and password. Users can then upload a photo to start a new story or contribute to another story that is already started. The only catch is that you can only add one sentence at a time. After that the user needs to wait for someone else to post a sentence before they will be able to again.
+For this months project at flatiron school I was tasked with going back over my last project Storytime. Storytime is a full rails app, and add an api to the project along with ajax calls instead of reloading the page every time a button is pressed. Storytime allows users to sign up using their google account or creating a new account with email and password. Users can then upload a photo to start a new story or contribute to another story that is already started. The only catch is that you can only add one sentence at a time. After that the user needs to wait for someone else to post a sentence before they will be able to again.
 
 The biggest challenge for me in the project was getting posts to the api to work correctly at first i was getting an error about having no csrfToken. Finally after a while of searching on google and trying many different things i found that adding:
 
