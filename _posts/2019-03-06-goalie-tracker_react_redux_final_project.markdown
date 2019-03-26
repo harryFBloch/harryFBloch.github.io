@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Goalie-Tracker React/Redux Final Project"
-date:       2019-03-07 01:40:28 +0000
+date:       2019-03-06 20:40:29 -0500
 permalink:  goalie-tracker_react_redux_final_project
 ---
 
 
-For my final project at flatiron school I was tasked with using all my knowledge learn in the course to create a single page web app. The technologies that used to create this app where a Rails backend and a React/Redux front end. I created a hockey goalie tracking app where you can enter statistics while your watching a hockey game. There are four main routes in the app one to create a new game, one to enter data on the current game, list all stats for goalies, and list all games. 
+For my final project at Flatiron school I was tasked with using all of my knowledge learned in the course to create a single page web app. The technologies that used to create this app where a Rails backend and a React/Redux front end. I created a hockey goalie tracking app where you can enter statistics while your watching a hockey game. There are four main routes in the app one to create a new game, one to enter data on the current game, list all stats for goalies, and list all games. 
 
 The biggest challenges I faced while creating this app where figuring out how to turn a picture into a bunch of buttons and how to chain async actions using redux. I overcame these challenges by reading stack overflow and creative thinking. 
 
